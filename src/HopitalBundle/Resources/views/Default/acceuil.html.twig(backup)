@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>{% if title is defined %} {{ title }} | {% endif %} mini projet Symfony3::Louhichi Amine</title>
+    <link rel="stylesheet" type="text/css" href="{{asset('css/font-awesome.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{asset('css/style.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="css/Lobster.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/animate.css') }}"/>
+</head>
+<body>
+
+
+
+    <div class="content">
+    <div class="container wow fadeInUp delay-03s">
+      <div class="row">
+        <div class="logo text-center">
+          <img src="img/al.png" alt="logo" width="150">
+          <h2>Mini Projet Symfony3</h2><br><br>
+          <ul class="list-group text-primary" >
+            <li class="list-group-item"><i class="fa fa-address-book-o fa-2x" aria-hidden="true"></i> Cras justo odio</li>
+            <li class="list-group-item"><i class="fa fa-hospital-o fa-2x" aria-hidden="true"></i>Dapibus ac facilisis in</li>
+            <li class="list-group-item">Morbi leo risus</li>
+            <li class="list-group-item">Porta ac consectetur ac</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+          </ul>
+        </div>
+
+      
+      </div>
+    </div>
+    
+    <section>
+    </section>
+    <section id="about" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 text-center">
+            <div class="about-title">
+              <h2>Fonctionnalités</h2>
+              <p>Ce petit mini projet contient implimente les fonctionnalités basiques suivantes</p>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp delay-02s">
+              <div class="img">
+                <i class="fa fa-user-md" aria-hidden="true"></i>
+              </div>
+              <h3 class="abt-hd">Gestion de médicin </h3>
+              <p>Consulter la liste des médicins, ajouter un medicin</p>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp delay-04s">
+              <div class="img">
+                <i class="fa fa-heart" aria-hidden="true"></i>
+              </div>
+              <h3 class="abt-hd">Intègration de bootstrap</h3>
+              <p>Créer avec bootstrap 4.3</p>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp delay-06s">
+              <div class="img">
+                <i class="fa fa-hospital-o" aria-hidden="true"></i>
+              </div>
+              <h3 class="abt-hd">Gestion d'hopital</h3>
+              <p>
+                 Consulter la liste des médicins, ajouter un Hopital</p>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp delay-08s">
+              <div class="img">
+                <i class="fa fa-dot-circle-o"></i>
+              </div>
+              <h3 class="abt-hd">Our Objective</h3>
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="row bort">
+
+        <div class="copyright">
+          2019 © Louhichi Amine <a target="_blank" href="www.github.com/aminelch">@aminelch</a></b>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="{{ asset('js/jquery.min.js') }}"></script>
+  <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+  <script src="{{ asset('js/wow.js') }}"></script>
+  <script src="{{ asset('js/custom.js') }}"></script>
+ 
+
+</body>
+</html>

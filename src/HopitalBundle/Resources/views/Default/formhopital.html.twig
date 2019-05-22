@@ -1,0 +1,47 @@
+{% extends '::base.html.twig' %}
+{% set title = 'Ajouter un Hopital' %}
+
+{% block body %}
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="/">Mini Projet Symfony3</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link " href="/listehopitaux">Hopitaux</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/listemedecins">Medecins</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+<div class="container">
+<div class="row ml-1">
+    <h2><i class="fa fa-hospital-o fa-2x" aria-hidden="true"></i> Ajouter un Hopital</h2>
+</div>
+</div>
+<div class="container">
+
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  Veuiller remplir attentivement le formulaire 
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+{{ form(f) }}
+
+
+
+
+
+
+</div>
+{% endblock %}

@@ -1,0 +1,74 @@
+{% extends '::base.html.twig' %}
+{% set title = 'Liste des Hopitaux' %}
+
+{% block body %}
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="/">Mini Projet Symfony3</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link " href="/listehopitaux">Hopitaux</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/listemedecins">Medecins</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+    <div class="container">
+        <div class="row ml-1">
+            <h2>
+                <i aria-hidden="true" class="fa fa-user-md fa-2x"></i>
+                Consulter un hopitaux</h2>
+                             &nbsp;&nbsp;   <sup><a href="/ajouterhopital" class="btn btn-success">Ajouter un Hopital</a></sup>
+        </div>
+    </div>
+    <div class="container">
+   
+    <div class="row">
+
+
+
+    </div>    
+        <div class="row mt-2">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nom</th>
+                            <th scope="col">Type</th>
+                            <th scope="col">Adresse</th>
+                            <th scope="col">Supprimer</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                 
+                            <tr>
+                                <th scope="row">{{ h.id }}</th>
+                                <td>{{ h.nomHopital }}</td>
+                                <td>{{ h.typeHopital }}</td>
+                                <td>{{ h.adresseHopital }}</td>
+                                <td>
+                                    <a title="Supprimer" class="btn btn-danger md" href="/listehopitaux/supprimer/{{ h.id }}" data-toggle="tooltip" data-placement="top" title="Supprimer">
+                                        <i aria-hidden="true" class="fa fa-times"></i>
+                                        </a>
+                                </td>
+                            </tr>
+         
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+
+
+{% endblock %}

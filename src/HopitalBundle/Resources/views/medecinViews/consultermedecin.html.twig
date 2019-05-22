@@ -1,0 +1,87 @@
+{% extends '::base.html.twig' %}
+{% set title = 'Liste des Hopitaux' %}
+
+{% block body %}
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="/">Mini Projet Symfony3</a>
+        <button aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarText" data-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link " href="/listehopitaux">Hopitaux</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Medecins</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+  
+    <div class="container">
+        <div class="row ml-1">
+            <h2>
+                <i aria-hidden="true" class="fa fa-user-md fa-2x"></i>
+                Consulter la liste des medecins inscrits</h2>
+            &nbsp;&nbsp;
+            <sup>
+                <a class="btn btn-success" href="/ajoutermedecin">Ajouter un Medecin</a>
+            </sup>
+        </div>
+    </div>
+    <div class="container">
+
+        <div class="row"></div>
+        <div class="row mt-2">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <table class="table table-light  table-bordered ">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nom</th>
+                            <th scope="col">Prènom</th>
+                            <th scope="col">Profession</th>
+                            <th scope="col">Experience</th>
+                            <th scope="col">Date d'aumboche</th>
+                            <th scope="col">Hopital associé</th>
+                            <th scope="col">Actions</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <th scope="row">{{medecin.id }}</th>
+                            <td>{{ medecin.nom }}</td>
+                            <td>{{ medecin.prenom }}</td>
+                            <td>{{ medecin.profession }}</td>
+                            <td>{{ medecin.experience }}
+                                ans
+                            </td>
+                            <td>
+                                {% if medecin.dateEmbauche %}
+                                    {{ medecin.dateEmbauche|date('Y-m-d H:i:s') }}
+                                {% endif %}
+                            </td>
+                            <td style="width: 16.66%" >{{ medecin.hopital.nomHopital }}</td>
+
+                            <td>
+                                <a class="btn btn-danger btn-md" data-placement="top" data-toggle="tooltip" href="/listemedecins/supprimer/{{ medecin.id }}" title="Supprimer" title="Supprimer">
+
+                                <i aria-hidden="true" class="fa fa-times"></i>Supprimer
+                                </a>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+
+
+{% endblock %}

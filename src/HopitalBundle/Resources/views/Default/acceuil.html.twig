@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>{% if title is defined %} {{ title }} | {% endif %} mini projet Symfony3::Louhichi Amine</title>
+
+
+
+    <link rel="stylesheet" type="text/css" href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ asset('vendor/fontawesome-free/css/all.min.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ asset('vendor/simple-line-icons/css/simple-line-icons.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ asset ('css/stylish-portfolio.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset ('css/source-code-semibold.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset ('css/animate.css') }}">
+
+
+</head>
+
+<body id="page-top" class="animated fadeIn delay-3s">
+
+  <!-- Navigation -->
+  <a class="menu-toggle rounded" href="#">
+    <i class="fas fa-bars"></i>
+  </a>
+  <nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <li class="sidebar-brand">
+        <a class="js-scroll-trigger" href="#page-top">mini projet symfony3 </a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#page-top">  <i class="fas fa-home  fa-2x"></i> &nbsp; &nbsp; Acceuil</a>
+      </li>
+  
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#services"><i class="fas fa-2x fa-desktop">  </i>&nbsp; &nbsp; Services</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="http://127.0.0.1:8000/listemedecins"><i class="fas fa-2x fa-users"></i>&nbsp; &nbsp; Consulter les medicins</a>
+      </li>
+
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="http://127.0.0.1:8000/listehopitaux"><i class="fas fa-2x fa-hospital"></i>&nbsp; &nbsp; Consulter les hôpitaux</a>
+      </li>
+
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#"></a>
+      </li>
+  
+
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead d-flex">
+    <div class="container text-center my-auto">
+      <h1 class="mb-1">Mini Project Symfony 3</h1>
+     <img src="{{ asset('img/al.png') }}" />  <span style="font-size: 33px;
+    font-weight: bold;">&& Khiari Oumaima</span>
+        </p>
+  
+         </div>
+    <div class="overlay"></div>
+  </header>
+
+  
+  <!-- Services -->
+  <section class="content-section bg-primary text-white text-center animated bounceInRight delay-3s" id="services">
+    <div class="container">
+      <div class="content-section-heading">
+        <h3 class="text-secondary mb-0">Fonctionnalités</h3>
+        <h2 class="mb-5">Ce que nous offrons ?</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-screen-smartphone"></i>
+          </span>
+          <h4>
+            <strong>Responsive</strong>
+          </h4>
+          <p class="text-faded mb-0">Adaptable sur les mobiles et le web</p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="fas fa-user-md"></i>
+          </span>
+          <h4>
+            <strong>Gestion de médecin</strong>
+          </h4>
+          <p class="text-faded mb-0">Ajout & consultation d'un médicin</p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="fas fa-hospital"></i>
+          </span>
+          <h4>
+            <strong>Gestion d'hopital</strong>
+          </h4>
+          <p class="text-faded mb-0">Ajout & consultation d'un hopital
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="fab fa-bootstrap"></i>
+          </span>
+          <h4>
+            <strong>Bootstrap </strong>
+          </h4>
+          <p class="text-faded mb-0">intégration de bootstrap,fontawesome,animateCSS</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+ 
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <p class="text-muted small mb-0">Copyright &copy; 2019 with <i class="icon-heart"></i>, by <a target="_blank" href="http://www.github.com/aminelch">@aminelch</a>
+         <br>
+
+
+      
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+
+
+  <script src="{{ asset('vendor/jquery/jquery.min.js') }} "></script>
+  <script src="{{ asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ asset('vendor/jquery-easing/jquery.easing.min.js') }}"></script>
+  <script src="{{ asset('js/stylish-portfolio.min.js') }}"></script>
+
+</body>
+
+</html>
