@@ -11,20 +11,20 @@ Contenu
 
 [![schema](https://github.com/aminelch/mini-projet-symofony3/blob/aminelch/img/schema_db.png "schema")](https://github.com/aminelch/mini-projet-symofony3/blob/aminelch/img/schema_db.png "schema")
 
-##### Générer la base de données
-importer ce fichier dans votre SGBD
+##### Création de  base de données
+importer ce fichier dans votre SGBD via --> importer un fichier  
 
 [database.sql](https://github.com/aminelch/mini-projet-symofony3/blob/aminelch/database-backup/database.sql "database.sql")
 
-##### Bundles 
+#### Bundles 
 
-######HopitalBundle 
+**HopitalBundle** 
 
 [Consulter le code ](https://github.com/aminelch/mini-projet-symofony3/tree/aminelch/src/HopitalBundle "Consulter le code ")
 
-##### Controllers 
+#### Controllers 
 
-######HopitalController
+**HopitalController**
 
 [HopitalController.php](https://github.com/aminelch/mini-projet-symofony3/blob/aminelch/src/HopitalBundle/Controller/HopitalController.php "HopitalController.php")
 
