@@ -1,0 +1,13 @@
+hopital_medecin:
+    resource: "@HopitalBundle/Controller/MedecinController.php"
+    type:     annotation
+
+
+hopital:
+    resource: "@HopitalBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation

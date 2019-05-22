@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>{% if title is defined %} {{ title }} | {% endif %} mini projet Symfony3::Louhichi Amine</title>
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('css/font-awesome.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('css/animate.css') }}"/>
+    {% block stylesheets %}{% endblock %}
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}"/>
+    <style>
+     body {padding-top: 50px;}
+     .container{ padding-top: 50px;}
+    </style>
+</head>
+<body>
+{% block body %}{% endblock %}
+{% block javascripts %}{% endblock %}
+<script src="{{ asset('js/jquery.min.js') }}"></script>
+<script src="{{ asset('js/bootstrap.js') }}"></script>
+</body>
+</html>
