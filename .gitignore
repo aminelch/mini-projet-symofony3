@@ -46,3 +46,9 @@
 
 # Embedded web-server pid file
 /.web-server-pid
+/tests/
+/var/
+/bin/ 
+bin/ 
+var/ 
+tests/ 
